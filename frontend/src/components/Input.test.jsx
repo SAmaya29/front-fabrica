@@ -1,4 +1,6 @@
+import React from 'react';
 import { render, screen } from '@testing-library/react';
+import { describe, expect, it } from 'vitest';
 import Input from './Input';
 
 describe('Input', () => {
@@ -9,8 +11,8 @@ describe('Input', () => {
   });
 
   it('renders input with provided type', () => {
-    render(<Input label="Clave" type="password" />);
+    render(<Input label="Correo" type="email" />);
 
-    expect(screen.getByRole('textbox')).toHaveAttribute('type', 'password');
+    expect(screen.getByRole('textbox')).toHaveAttribute('type', 'email');
   });
 });

@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Input({ label, type = "text" }) {
   return (
     <div style={{ marginBottom: "10px" }}>
